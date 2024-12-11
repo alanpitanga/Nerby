@@ -11,6 +11,7 @@
 		0E6FE9092D09269B00255725 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE9082D09269B00255725 /* SceneDelegate.swift */; };
 		0E6FE90B2D09269B00255725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE90A2D09269B00255725 /* ViewController.swift */; };
 		0E6FE9102D09269D00255725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FE90F2D09269D00255725 /* Assets.xcassets */; };
+		0E6FE91F2D092B5C00255725 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE91E2D092B5C00255725 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		0E6FE90A2D09269B00255725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E6FE90F2D09269D00255725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E6FE9142D09269D00255725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E6FE91E2D092B5C00255725 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		0E6FE91D2D0929B100255725 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				0E6FE91E2D092B5C00255725 /* Colors.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6FE90B2D09269B00255725 /* ViewController.swift in Sources */,
+				0E6FE91F2D092B5C00255725 /* Colors.swift in Sources */,
 				0E6FE9072D09269B00255725 /* AppDelegate.swift in Sources */,
 				0E6FE9092D09269B00255725 /* SceneDelegate.swift in Sources */,
 			);

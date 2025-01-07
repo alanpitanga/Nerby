@@ -46,6 +46,8 @@ class SplashView: UIView {
             logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             logoImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             
+            backgroundImage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
+            backgroundImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0),
             backgroundImage.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
         

@@ -98,6 +98,7 @@
 		0E6FE91D2D0929B100255725 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				0EE71E792D2DFEBA00BE2BBC /* Components */,
 				0E6FE9252D09396600255725 /* Scenes */,
 				0E6FE9222D0935BF00255725 /* Coordinator */,
 			);
@@ -127,6 +128,13 @@
 				0E6FE9292D093A2B00255725 /* SplashView.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		0EE71E792D2DFEBA00BE2BBC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

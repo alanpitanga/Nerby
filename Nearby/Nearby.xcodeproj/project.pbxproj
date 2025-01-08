@@ -16,6 +16,7 @@
 		0E6FE9282D09398B00255725 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE9272D09398B00255725 /* SplashViewController.swift */; };
 		0E6FE92A2D093A2B00255725 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FE9292D093A2B00255725 /* SplashView.swift */; };
 		0EE71E7B2D2DFFE000BE2BBC /* TipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE71E7A2D2DFFE000BE2BBC /* TipsView.swift */; };
+		0EE71E7F2D2E16FC00BE2BBC /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE71E7E2D2E16FC00BE2BBC /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0E6FE9272D09398B00255725 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		0E6FE9292D093A2B00255725 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		0EE71E7A2D2DFFE000BE2BBC /* TipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsView.swift; sourceTree = "<group>"; };
+		0EE71E7E2D2E16FC00BE2BBC /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		0E6FE9252D09396600255725 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0EE71E7D2D2E16DD00BE2BBC /* WelcomeView */,
 				0E6FE9262D09396D00255725 /* Splash */,
 			);
 			path = Scenes;
@@ -138,6 +141,14 @@
 				0EE71E7A2D2DFFE000BE2BBC /* TipsView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		0EE71E7D2D2E16DD00BE2BBC /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				0EE71E7E2D2E16FC00BE2BBC /* WelcomeView.swift */,
+			);
+			path = WelcomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 				0E6FE90B2D09269B00255725 /* ViewController.swift in Sources */,
 				0E6FE91F2D092B5C00255725 /* Colors.swift in Sources */,
 				0E6FE9282D09398B00255725 /* SplashViewController.swift in Sources */,
+				0EE71E7F2D2E16FC00BE2BBC /* WelcomeView.swift in Sources */,
 				0EE71E7B2D2DFFE000BE2BBC /* TipsView.swift in Sources */,
 				0E6FE9072D09269B00255725 /* AppDelegate.swift in Sources */,
 				0E6FE9092D09269B00255725 /* SceneDelegate.swift in Sources */,

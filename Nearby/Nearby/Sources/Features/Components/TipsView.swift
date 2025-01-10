@@ -63,8 +63,8 @@ public class TipsView: UIView {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
+            iconImageView.topAnchor.constraint(equalTo: self.topAnchor),
             iconImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            iconImageView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             iconImageView.heightAnchor.constraint(equalToConstant: 24),
             iconImageView.widthAnchor.constraint(equalToConstant: 24),
             

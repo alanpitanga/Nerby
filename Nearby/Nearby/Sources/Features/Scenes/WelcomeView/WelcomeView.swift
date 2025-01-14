@@ -30,7 +30,7 @@ class WelcomeView: UIView {
     private let descriptionLabel: UILabel = {
         let label = UILabel()
         label.text = "Tenha cupons de vantagem para usar em seus estabelecimentos favoritos."
-        label.font = Typography.titleMD
+        label.font = Typography.textMD
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
 
@@ -40,14 +40,14 @@ class WelcomeView: UIView {
     private let subTextForTips: UILabel = {
         let label = UILabel()
         label.text = "Veja como funciona:"
-        label.font = Typography.titleMD
+        label.font = Typography.textMD
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private let tipsStackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.spacing = 16
+        stackView.spacing = 24
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -98,7 +98,7 @@ class WelcomeView: UIView {
             welcomeLabel.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 24),
             welcomeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             
-            descriptionLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 8),
+            descriptionLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor, constant: 16),
             descriptionLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             descriptionLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
             

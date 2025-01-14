@@ -130,6 +130,7 @@
 		0E6FE9252D09396600255725 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0E8AF9512D36000300CDD3A9 /* HomeView */,
 				0EE71E7D2D2E16DD00BE2BBC /* WelcomeView */,
 				0E6FE9262D09396D00255725 /* Splash */,
 			);
@@ -144,6 +145,13 @@
 				0EB143052D30BB6200D14DF3 /* SplashFlowDelegate.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		0E8AF9512D36000300CDD3A9 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 		0EB143012D30B73C00D14DF3 /* Extensions */ = {

@@ -21,7 +21,7 @@ class PlaceTableViewCell: UITableViewCell {
         
     }()
     
-    let itemImageView: UIImageView = {
+    var itemImageView: UIImageView = {
        let imageView = UIImageView()
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 8
@@ -39,9 +39,9 @@ class PlaceTableViewCell: UITableViewCell {
     
     let descriptionLable: UILabel = {
         let label = UILabel()
-        label.font = Typography.textSM
+        label.font = Typography.textXS
         label.numberOfLines = 0
-        label.textColor = Colors.gray300
+        label.textColor = Colors.gray500
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -58,6 +58,7 @@ class PlaceTableViewCell: UITableViewCell {
     let ticketLabel: UILabel = {
         let label = UILabel()
         label.font = Typography.textXS
+        label.textColor = Colors.gray400
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -89,33 +90,45 @@ class PlaceTableViewCell: UITableViewCell {
             containerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
             containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
             
+            itemImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             itemImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 8),
             itemImageView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
+            itemImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
             itemImageView.widthAnchor.constraint(equalToConstant: 116),
             itemImageView.heightAnchor.constraint(equalToConstant: 104),
             
             titleLable.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 8),
-            titleLable.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 8),
+            titleLable.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 16),
             titleLable.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8),
             
             descriptionLable.topAnchor.constraint(equalTo: titleLable.bottomAnchor, constant: 4),
-            descriptionLable.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 8),
+            descriptionLable.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 16),
             descriptionLable.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8),
             
-            ticketIcon.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: -8),
+            ticketIcon.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 16),
             ticketIcon.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
             ticketIcon.widthAnchor.constraint(equalToConstant: 13),
             ticketIcon.heightAnchor.constraint(equalToConstant: 11),
             
+            ticketLabel.topAnchor.constraint(equalTo: descriptionLable.bottomAnchor, constant: 8),
             ticketLabel.centerYAnchor.constraint(equalTo: ticketIcon.centerYAnchor),
             ticketLabel.leadingAnchor.constraint(equalTo: ticketIcon.trailingAnchor, constant: 4)
         ])
     }
     
     func configure(with place: Place) {
-        imageView?.image = UIImage(named: place.imageName)
-        titleLable.text  = place.title
+        if let url = URL(string: place.cover) {
+            URLSession.shared.dataTask(with: url) { data, _, _ in
+                if let data = data, let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self.itemImageView.image = image
+                    }
+                }
+            }.resume()
+        }
+        
+        titleLable.text  = place.name
         descriptionLable.text = place.description
-        ticketLabel.text = "cupons disponíveis"
+        ticketLabel.text = "\(place.coupons) cupons disponíveis"
     }
 }

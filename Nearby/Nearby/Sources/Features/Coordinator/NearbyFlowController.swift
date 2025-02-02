@@ -17,7 +17,9 @@ class NearbyFlowController {
     
     func start() -> UINavigationController? {
         let contentView = SplashView()
-        let startViwController = SplashViewController(contentView: contentView, delegate: self)
+       // let startViwController = SplashViewController(contentView: contentView, delegate: self)
+        let startViwController = HomeViewController()
+
         self.navigationController = UINavigationController(rootViewController: startViwController)
         
         return navigationController

@@ -111,6 +111,7 @@ class PlaceTableViewCell: UITableViewCell {
             ticketIcon.heightAnchor.constraint(equalToConstant: 11),
             
             ticketLabel.topAnchor.constraint(equalTo: descriptionLable.bottomAnchor, constant: 8),
+            ticketLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8),
             ticketLabel.centerYAnchor.constraint(equalTo: ticketIcon.centerYAnchor),
             ticketLabel.leadingAnchor.constraint(equalTo: ticketIcon.trailingAnchor, constant: 4)
         ])

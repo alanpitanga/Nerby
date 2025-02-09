@@ -192,8 +192,7 @@ class HomeView: UIView {
         button.titleLabel?.numberOfLines = 1
         button.contentEdgeInsets = UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12)
         button.imageView?.contentMode = .scaleAspectFit
-        button.imageView?.heightAnchor.constraint(equalToConstant: 16).isActive = true
-        button.imageView?.widthAnchor.constraint(equalToConstant: 16).isActive = true
+        
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 8)
 
         
